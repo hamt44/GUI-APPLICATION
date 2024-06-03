@@ -1,0 +1,38 @@
+/*
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
+ */
+package cw.coursework;
+
+/**
+ *
+ * @author YSJ COMPUTERS
+ *///V/ Main method for testing
+public class Zoo {
+   
+    public static void main(String[] args) {
+        // Test the Lion class
+        Animal.Lion lion = new Animal.Lion("mike", 5);
+        lion.makeSound();
+        lion.eat();
+
+        // Test the Elephant class
+        Animal.Elephant elephant = new Animal.Elephant("Bag", 10);
+        elephant.makeSound();
+        elephant.eat();
+
+        // Test the Monkey class
+        Animal.Monkey monkey = new Animal.Monkey("Van", 3);
+        monkey.makeSound();
+        monkey.eat();
+
+        // Using the overloaded methods to show polymorphism
+        lion.makeSound(3);
+        elephant.eat("fruits");
+        monkey.makeSound(2);
+    }
+}
+
+
+
+
